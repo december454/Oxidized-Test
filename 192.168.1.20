@@ -1,5 +1,5 @@
 {
-   "Config_Version": 10,
+   "Config_Version": 11,
    "IPv4_Mode": "Static",
    "IPv4_Address": "192.168.1.20",
    "IPv4_Netmask": "255.255.255.0",
@@ -1089,7 +1089,7 @@
        "ID": 1,
        "Name": "Management",
        "Enable": true,
-       "PortSettings": "UUUUUUUUUUUUUUUUUUUUUUUUUE",
+       "PortSettings": "UUUUUUUUUUUUUUUUUUUUUUUUEE",
        "IPv4_Enable": false,
        "IPv4_Address": "",
        "IPv4_Netmask": "",
@@ -1098,7 +1098,7 @@
        "IGMP_Querier": false
      },
      {
-       "PortSettings": "EEEEEEEEEEEEEEEEEEEEEEEEEU",
+       "PortSettings": "EEEEEEEEEEEEEEEEEEEEEEEEUU",
        "Enable": true,
        "Name": "",
        "ID": "47",
