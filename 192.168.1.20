@@ -1,0 +1,1882 @@
+{
+   "Config_Version": 9,
+   "IPv4_Mode": "Static",
+   "IPv4_Address": "192.168.1.20",
+   "IPv4_Netmask": "255.255.255.0",
+   "IPv4_Gateway": "192.168.1.1",
+   "IPv4_Primary_DNS": "192.168.1.1",
+   "IPv4_Secondary_DNS": "",
+   "IPv6_Enable": false,
+   "IPv6_Mode": "DHCP",
+   "IPv6_Address": "",
+   "IPv6_Gateway": "",
+   "IPv6_Primary_DNS": "",
+   "IPv6_Secondary_DNS": "",
+   "Switch_Name": "Netonix Switch",
+   "NTP_Zone": "America\/New York (EST5EDT,M3.2.0,M11.1.0)",
+   "Switch_Location": "",
+   "GPS_Latitude": "",
+   "GPS_Longitude": "",
+   "Credentials_Name": "admin",
+   "Credentials_Password": "",
+   "Credentials_HashedPassword": "cGyUX9QugYMgE",
+   "Credentials_NewHashedPassword": "$P$BHMqQO8MkgtIuGUmamXk4JNXG5I.Ju.",
+   "Credentials_Console_Login": true,
+   "RADIUS_Enable": false,
+   "RADIUS_Host": "",
+   "RADIUS_Port": "1812",
+   "RADIUS_Secret": "",
+   "SSH_Enable": true,
+   "SSH_Port": "22",
+   "SSH_Allow_Passwords": true,
+   "SSH_Allow_Telnet": false,
+   "SSH_Keys": [
+   ],
+   "SNMP_Server_Enable": true,
+   "SNMP_Server_Community": "test",
+   "SNMP_Server_Contact": "Griffin",
+   "SNMP_Server_Location": "Test Lab",
+   "SNMP_Server_Version_1": false,
+   "SNMP_Server_Version_2c": true,
+   "Syslog_Enable": true,
+   "Syslog_Host": "192.168.1.15",
+   "Syslog_Port": "514",
+   "Syslog_Exclude": "192.168.1.15",
+   "Syslog_Buffer_Size": "128",
+   "Syslog_Log_Logins": true,
+   "Syslog_Log_Name": true,
+   "SMTP_Enable": false,
+   "SMTP_Host": "",
+   "SMTP_Port": "25",
+   "SMTP_Username": "",
+   "SMTP_Password": "",
+   "SMTP_Secure": false,
+   "SMTP_Address": "",
+   "SMTP_From_Address": "",
+   "SMTP_Local_Hostname": "",
+   "NTP_Enable": false,
+   "NTP_Host": "",
+   "STP_Enable": true,
+   "STP_Version": "RSTP",
+   "STP_Max_Age": "20",
+   "STP_Hello_Time": "2",
+   "STP_Forward_Delay": "15",
+   "STP_Priority": "32768",
+   "STP_LAG_Enable": true,
+   "Storm_Control_Broadcast": "None",
+   "Storm_Control_Multicast": "None",
+   "Storm_Control_Unicast": "None",
+   "Storm_Control_Loop_Protection": false,
+   "Storm_Control_Pause_Frame": true,
+   "PingWatchdogs": [
+   ],
+   "PortBounces": [
+   ],
+   "AccessControls": [
+   ],
+   "HTTPS_Enable": true,
+   "HTTPS_Port": "443",
+   "HTTPS_Allow_HTTP": false,
+   "HTTPS_HTTP_Port": "80",
+   "AggregationMode_DestinationMAC": false,
+   "AggregationMode_SourceMAC": false,
+   "AggregationMode_SourceDestinationIP": true,
+   "AggregationMode_SourceDestinationPort": false,
+   "Tarpit_Enable": true,
+   "Tarpit_Attempts": "5",
+   "Tarpit_Delay": "60",
+   "Discovery_Ubiquiti": false,
+   "Discovery_Cisco": false,
+   "Discovery_LLDP": false,
+   "Auto_Backup_TFTP_URL": "",
+   "Power_Hibernate_Voltage": "9",
+   "Power_Wakeup_Voltage": "10",
+   "Power_Warning_Voltage": "11",
+   "Options_IGMP_Snooping": false,
+   "Options_MAC_Aging": "300",
+   "QoSRules": [
+   ],
+   "Options_Language": "en",
+   "Serial_Mode": "Console",
+   "Serial_TCP_Port": "502",
+   "Serial_Baud_Rate": "115200",
+   "Serial_Parity": "N",
+   "Serial_Data_Bits": "8",
+   "Serial_Stop_Bits": "1",
+   "Email_Alerts_Link_Change": true,
+   "Email_Alerts_Flow_Control": true,
+   "Email_Alerts_DC_Power": true,
+   "Email_Alerts_Fans": true,
+   "Email_Alerts_PoE": true,
+   "Email_Alerts_LACP": true,
+   "Discovery_Discovery_Tab": false,
+   "Switch_Revert_Timer": "300",
+   "Applied": true,
+   "MSTP_Name": "",
+   "MSTP_Revision": 0,
+   "ERPS": [
+   ],
+   "MEPs": [
+   ],
+   "Ports": [
+     {
+       "Number": 1,
+       "Name": "Port 1",
+       "Enable": true,
+       "Link": "Auto",
+       "PoE": "Off",
+       "FlowControl": "None",
+       "Multicast": true,
+       "MTU": "1528",
+       "TxLimit": "",
+       "RxLimit": "",
+       "STP": true,
+       "STPPriority": "128",
+       "STP_Path_Cost": "",
+       "Stats": true,
+       "Isolation": false,
+       "AllowedVLANs": "",
+       "DHCP_Snooping": false,
+       "Shutdown_Voltage": "",
+       "Restart_Voltage": "",
+       "Priority": "1",
+       "Shutdown_Time": "",
+       "Startup_Time": "",
+       "Boot_Start_Delay": "",
+       "Updated_SFP2": true,
+       "QoSSched": "Strict",
+       "PoE_Smart": true,
+       "Updated_MTU": true
+     },
+     {
+       "Number": 2,
+       "Name": "Port 2",
+       "Enable": true,
+       "Link": "Auto",
+       "PoE": "Off",
+       "FlowControl": "None",
+       "Multicast": true,
+       "MTU": "1528",
+       "TxLimit": "",
+       "RxLimit": "",
+       "STP": true,
+       "STPPriority": "128",
+       "STP_Path_Cost": "",
+       "Stats": true,
+       "Isolation": false,
+       "AllowedVLANs": "",
+       "DHCP_Snooping": false,
+       "Shutdown_Voltage": "",
+       "Restart_Voltage": "",
+       "Priority": "2",
+       "Shutdown_Time": "",
+       "Startup_Time": "",
+       "Boot_Start_Delay": "",
+       "Updated_SFP2": true,
+       "QoSSched": "Strict",
+       "PoE_Smart": true,
+       "Updated_MTU": true
+     },
+     {
+       "Number": 3,
+       "Name": "Port 3",
+       "Enable": true,
+       "Link": "Auto",
+       "PoE": "Off",
+       "FlowControl": "None",
+       "Multicast": true,
+       "MTU": "1528",
+       "TxLimit": "",
+       "RxLimit": "",
+       "STP": true,
+       "STPPriority": "128",
+       "STP_Path_Cost": "",
+       "Stats": true,
+       "Isolation": false,
+       "AllowedVLANs": "",
+       "DHCP_Snooping": false,
+       "Shutdown_Voltage": "",
+       "Restart_Voltage": "",
+       "Priority": "3",
+       "Shutdown_Time": "",
+       "Startup_Time": "",
+       "Boot_Start_Delay": "",
+       "Updated_SFP2": true,
+       "QoSSched": "Strict",
+       "PoE_Smart": true,
+       "Updated_MTU": true
+     },
+     {
+       "Number": 4,
+       "Name": "Port 4",
+       "Enable": true,
+       "Link": "Auto",
+       "PoE": "Off",
+       "FlowControl": "None",
+       "Multicast": true,
+       "MTU": "1528",
+       "TxLimit": "",
+       "RxLimit": "",
+       "STP": true,
+       "STPPriority": "128",
+       "STP_Path_Cost": "",
+       "Stats": true,
+       "Isolation": false,
+       "AllowedVLANs": "",
+       "DHCP_Snooping": false,
+       "Shutdown_Voltage": "",
+       "Restart_Voltage": "",
+       "Priority": "4",
+       "Shutdown_Time": "",
+       "Startup_Time": "",
+       "Boot_Start_Delay": "",
+       "Updated_SFP2": true,
+       "QoSSched": "Strict",
+       "PoE_Smart": true,
+       "Updated_MTU": true
+     },
+     {
+       "Number": 5,
+       "Name": "Port 5",
+       "Enable": true,
+       "Link": "Auto",
+       "PoE": "Off",
+       "FlowControl": "None",
+       "Multicast": true,
+       "MTU": "1528",
+       "TxLimit": "",
+       "RxLimit": "",
+       "STP": true,
+       "STPPriority": "128",
+       "STP_Path_Cost": "",
+       "Stats": true,
+       "Isolation": false,
+       "AllowedVLANs": "",
+       "DHCP_Snooping": false,
+       "Shutdown_Voltage": "",
+       "Restart_Voltage": "",
+       "Priority": "5",
+       "Shutdown_Time": "",
+       "Startup_Time": "",
+       "Boot_Start_Delay": "",
+       "Updated_SFP2": true,
+       "QoSSched": "Strict",
+       "PoE_Smart": true,
+       "Updated_MTU": true
+     },
+     {
+       "Number": 6,
+       "Name": "Port 6",
+       "Enable": true,
+       "Link": "Auto",
+       "PoE": "Off",
+       "FlowControl": "None",
+       "Multicast": true,
+       "MTU": "1528",
+       "TxLimit": "",
+       "RxLimit": "",
+       "STP": true,
+       "STPPriority": "128",
+       "STP_Path_Cost": "",
+       "Stats": true,
+       "Isolation": false,
+       "AllowedVLANs": "",
+       "DHCP_Snooping": false,
+       "Shutdown_Voltage": "",
+       "Restart_Voltage": "",
+       "Priority": "6",
+       "Shutdown_Time": "",
+       "Startup_Time": "",
+       "Boot_Start_Delay": "",
+       "Updated_SFP2": true,
+       "QoSSched": "Strict",
+       "PoE_Smart": true,
+       "Updated_MTU": true
+     },
+     {
+       "Number": 7,
+       "Name": "Port 7",
+       "Enable": true,
+       "Link": "Auto",
+       "PoE": "Off",
+       "FlowControl": "None",
+       "Multicast": true,
+       "MTU": "1528",
+       "TxLimit": "",
+       "RxLimit": "",
+       "STP": true,
+       "STPPriority": "128",
+       "STP_Path_Cost": "",
+       "Stats": true,
+       "Isolation": false,
+       "AllowedVLANs": "",
+       "DHCP_Snooping": false,
+       "Shutdown_Voltage": "",
+       "Restart_Voltage": "",
+       "Priority": "7",
+       "Shutdown_Time": "",
+       "Startup_Time": "",
+       "Boot_Start_Delay": "",
+       "Updated_SFP2": true,
+       "QoSSched": "Strict",
+       "PoE_Smart": true,
+       "Updated_MTU": true
+     },
+     {
+       "Number": 8,
+       "Name": "Port 8",
+       "Enable": true,
+       "Link": "Auto",
+       "PoE": "Off",
+       "FlowControl": "None",
+       "Multicast": true,
+       "MTU": "1528",
+       "TxLimit": "",
+       "RxLimit": "",
+       "STP": true,
+       "STPPriority": "128",
+       "STP_Path_Cost": "",
+       "Stats": true,
+       "Isolation": false,
+       "AllowedVLANs": "",
+       "DHCP_Snooping": false,
+       "Shutdown_Voltage": "",
+       "Restart_Voltage": "",
+       "Priority": "8",
+       "Shutdown_Time": "",
+       "Startup_Time": "",
+       "Boot_Start_Delay": "",
+       "Updated_SFP2": true,
+       "QoSSched": "Strict",
+       "PoE_Smart": true,
+       "Updated_MTU": true
+     },
+     {
+       "Number": 9,
+       "Name": "Port 9",
+       "Enable": true,
+       "Link": "Auto",
+       "PoE": "Off",
+       "FlowControl": "None",
+       "Multicast": true,
+       "MTU": "1528",
+       "TxLimit": "",
+       "RxLimit": "",
+       "STP": true,
+       "STPPriority": "128",
+       "STP_Path_Cost": "",
+       "Stats": true,
+       "Isolation": false,
+       "AllowedVLANs": "",
+       "DHCP_Snooping": false,
+       "Shutdown_Voltage": "",
+       "Restart_Voltage": "",
+       "Priority": "9",
+       "Shutdown_Time": "",
+       "Startup_Time": "",
+       "Boot_Start_Delay": "",
+       "Updated_SFP2": true,
+       "QoSSched": "Strict",
+       "PoE_Smart": true,
+       "Updated_MTU": true
+     },
+     {
+       "Number": 10,
+       "Name": "Port 10",
+       "Enable": true,
+       "Link": "Auto",
+       "PoE": "Off",
+       "FlowControl": "None",
+       "Multicast": true,
+       "MTU": "1528",
+       "TxLimit": "",
+       "RxLimit": "",
+       "STP": true,
+       "STPPriority": "128",
+       "STP_Path_Cost": "",
+       "Stats": true,
+       "Isolation": false,
+       "AllowedVLANs": "",
+       "DHCP_Snooping": false,
+       "Shutdown_Voltage": "",
+       "Restart_Voltage": "",
+       "Priority": "10",
+       "Shutdown_Time": "",
+       "Startup_Time": "",
+       "Boot_Start_Delay": "",
+       "Updated_SFP2": true,
+       "QoSSched": "Strict",
+       "PoE_Smart": true,
+       "Updated_MTU": true
+     },
+     {
+       "Number": 11,
+       "Name": "Port 11",
+       "Enable": true,
+       "Link": "Auto",
+       "PoE": "Off",
+       "FlowControl": "None",
+       "Multicast": true,
+       "MTU": "1528",
+       "TxLimit": "",
+       "RxLimit": "",
+       "STP": true,
+       "STPPriority": "128",
+       "STP_Path_Cost": "",
+       "Stats": true,
+       "Isolation": false,
+       "AllowedVLANs": "",
+       "DHCP_Snooping": false,
+       "Shutdown_Voltage": "",
+       "Restart_Voltage": "",
+       "Priority": "11",
+       "Shutdown_Time": "",
+       "Startup_Time": "",
+       "Boot_Start_Delay": "",
+       "Updated_SFP2": true,
+       "QoSSched": "Strict",
+       "PoE_Smart": true,
+       "Updated_MTU": true
+     },
+     {
+       "Number": 12,
+       "Name": "Port 12",
+       "Enable": true,
+       "Link": "Auto",
+       "PoE": "Off",
+       "FlowControl": "None",
+       "Multicast": true,
+       "MTU": "1528",
+       "TxLimit": "",
+       "RxLimit": "",
+       "STP": true,
+       "STPPriority": "128",
+       "STP_Path_Cost": "",
+       "Stats": true,
+       "Isolation": false,
+       "AllowedVLANs": "",
+       "DHCP_Snooping": false,
+       "Shutdown_Voltage": "",
+       "Restart_Voltage": "",
+       "Priority": "12",
+       "Shutdown_Time": "",
+       "Startup_Time": "",
+       "Boot_Start_Delay": "",
+       "Updated_SFP2": true,
+       "QoSSched": "Strict",
+       "PoE_Smart": true,
+       "Updated_MTU": true
+     },
+     {
+       "Number": 13,
+       "Name": "Port 13",
+       "Enable": true,
+       "Link": "Auto",
+       "PoE": "Off",
+       "FlowControl": "None",
+       "Multicast": true,
+       "MTU": "1528",
+       "TxLimit": "",
+       "RxLimit": "",
+       "STP": true,
+       "STPPriority": "128",
+       "STP_Path_Cost": "",
+       "Stats": true,
+       "Isolation": false,
+       "AllowedVLANs": "",
+       "DHCP_Snooping": false,
+       "Shutdown_Voltage": "",
+       "Restart_Voltage": "",
+       "Priority": "13",
+       "Shutdown_Time": "",
+       "Startup_Time": "",
+       "Boot_Start_Delay": "",
+       "Updated_SFP2": true,
+       "QoSSched": "Strict",
+       "PoE_Smart": true,
+       "Updated_MTU": true
+     },
+     {
+       "Number": 14,
+       "Name": "Port 14",
+       "Enable": true,
+       "Link": "Auto",
+       "PoE": "Off",
+       "FlowControl": "None",
+       "Multicast": true,
+       "MTU": "1528",
+       "TxLimit": "",
+       "RxLimit": "",
+       "STP": true,
+       "STPPriority": "128",
+       "STP_Path_Cost": "",
+       "Stats": true,
+       "Isolation": false,
+       "AllowedVLANs": "",
+       "DHCP_Snooping": false,
+       "Shutdown_Voltage": "",
+       "Restart_Voltage": "",
+       "Priority": "14",
+       "Shutdown_Time": "",
+       "Startup_Time": "",
+       "Boot_Start_Delay": "",
+       "Updated_SFP2": true,
+       "QoSSched": "Strict",
+       "PoE_Smart": true,
+       "Updated_MTU": true
+     },
+     {
+       "Number": 15,
+       "Name": "Port 15",
+       "Enable": true,
+       "Link": "Auto",
+       "PoE": "Off",
+       "FlowControl": "None",
+       "Multicast": true,
+       "MTU": "1528",
+       "TxLimit": "",
+       "RxLimit": "",
+       "STP": true,
+       "STPPriority": "128",
+       "STP_Path_Cost": "",
+       "Stats": true,
+       "Isolation": false,
+       "AllowedVLANs": "",
+       "DHCP_Snooping": false,
+       "Shutdown_Voltage": "",
+       "Restart_Voltage": "",
+       "Priority": "15",
+       "Shutdown_Time": "",
+       "Startup_Time": "",
+       "Boot_Start_Delay": "",
+       "Updated_SFP2": true,
+       "QoSSched": "Strict",
+       "PoE_Smart": true,
+       "Updated_MTU": true
+     },
+     {
+       "Number": 16,
+       "Name": "Port 16",
+       "Enable": true,
+       "Link": "Auto",
+       "PoE": "Off",
+       "FlowControl": "None",
+       "Multicast": true,
+       "MTU": "1528",
+       "TxLimit": "",
+       "RxLimit": "",
+       "STP": true,
+       "STPPriority": "128",
+       "STP_Path_Cost": "",
+       "Stats": true,
+       "Isolation": false,
+       "AllowedVLANs": "",
+       "DHCP_Snooping": false,
+       "Shutdown_Voltage": "",
+       "Restart_Voltage": "",
+       "Priority": "16",
+       "Shutdown_Time": "",
+       "Startup_Time": "",
+       "Boot_Start_Delay": "",
+       "Updated_SFP2": true,
+       "QoSSched": "Strict",
+       "PoE_Smart": true,
+       "Updated_MTU": true
+     },
+     {
+       "Number": 17,
+       "Name": "Port 17",
+       "Enable": true,
+       "Link": "Auto",
+       "PoE": "Off",
+       "FlowControl": "None",
+       "Multicast": true,
+       "MTU": "1528",
+       "TxLimit": "",
+       "RxLimit": "",
+       "STP": true,
+       "STPPriority": "128",
+       "STP_Path_Cost": "",
+       "Stats": true,
+       "Isolation": false,
+       "AllowedVLANs": "",
+       "DHCP_Snooping": false,
+       "Shutdown_Voltage": "",
+       "Restart_Voltage": "",
+       "Priority": "17",
+       "Shutdown_Time": "",
+       "Startup_Time": "",
+       "Boot_Start_Delay": "",
+       "Updated_SFP2": true,
+       "QoSSched": "Strict",
+       "PoE_Smart": true,
+       "Updated_MTU": true
+     },
+     {
+       "Number": 18,
+       "Name": "Port 18",
+       "Enable": true,
+       "Link": "Auto",
+       "PoE": "Off",
+       "FlowControl": "None",
+       "Multicast": true,
+       "MTU": "1528",
+       "TxLimit": "",
+       "RxLimit": "",
+       "STP": true,
+       "STPPriority": "128",
+       "STP_Path_Cost": "",
+       "Stats": true,
+       "Isolation": false,
+       "AllowedVLANs": "",
+       "DHCP_Snooping": false,
+       "Shutdown_Voltage": "",
+       "Restart_Voltage": "",
+       "Priority": "18",
+       "Shutdown_Time": "",
+       "Startup_Time": "",
+       "Boot_Start_Delay": "",
+       "Updated_SFP2": true,
+       "QoSSched": "Strict",
+       "PoE_Smart": true,
+       "Updated_MTU": true
+     },
+     {
+       "Number": 19,
+       "Name": "Port 19",
+       "Enable": true,
+       "Link": "Auto",
+       "PoE": "Off",
+       "FlowControl": "None",
+       "Multicast": true,
+       "MTU": "1528",
+       "TxLimit": "",
+       "RxLimit": "",
+       "STP": true,
+       "STPPriority": "128",
+       "STP_Path_Cost": "",
+       "Stats": true,
+       "Isolation": false,
+       "AllowedVLANs": "",
+       "DHCP_Snooping": false,
+       "Shutdown_Voltage": "",
+       "Restart_Voltage": "",
+       "Priority": "19",
+       "Shutdown_Time": "",
+       "Startup_Time": "",
+       "Boot_Start_Delay": "",
+       "Updated_SFP2": true,
+       "QoSSched": "Strict",
+       "PoE_Smart": true,
+       "Updated_MTU": true
+     },
+     {
+       "Number": 20,
+       "Name": "Port 20",
+       "Enable": true,
+       "Link": "Auto",
+       "PoE": "Off",
+       "FlowControl": "None",
+       "Multicast": true,
+       "MTU": "1528",
+       "TxLimit": "",
+       "RxLimit": "",
+       "STP": true,
+       "STPPriority": "128",
+       "STP_Path_Cost": "",
+       "Stats": true,
+       "Isolation": false,
+       "AllowedVLANs": "",
+       "DHCP_Snooping": false,
+       "Shutdown_Voltage": "",
+       "Restart_Voltage": "",
+       "Priority": "20",
+       "Shutdown_Time": "",
+       "Startup_Time": "",
+       "Boot_Start_Delay": "",
+       "Updated_SFP2": true,
+       "QoSSched": "Strict",
+       "PoE_Smart": true,
+       "Updated_MTU": true
+     },
+     {
+       "Number": 21,
+       "Name": "Port 21",
+       "Enable": true,
+       "Link": "Auto",
+       "PoE": "Off",
+       "FlowControl": "None",
+       "Multicast": true,
+       "MTU": "1528",
+       "TxLimit": "",
+       "RxLimit": "",
+       "STP": true,
+       "STPPriority": "128",
+       "STP_Path_Cost": "",
+       "Stats": true,
+       "Isolation": false,
+       "AllowedVLANs": "",
+       "DHCP_Snooping": false,
+       "Shutdown_Voltage": "",
+       "Restart_Voltage": "",
+       "Priority": "21",
+       "Shutdown_Time": "",
+       "Startup_Time": "",
+       "Boot_Start_Delay": "",
+       "Updated_SFP2": true,
+       "QoSSched": "Strict",
+       "PoE_Smart": true,
+       "Updated_MTU": true
+     },
+     {
+       "Number": 22,
+       "Name": "Port 22",
+       "Enable": true,
+       "Link": "Auto",
+       "PoE": "Off",
+       "FlowControl": "None",
+       "Multicast": true,
+       "MTU": "1528",
+       "TxLimit": "",
+       "RxLimit": "",
+       "STP": true,
+       "STPPriority": "128",
+       "STP_Path_Cost": "",
+       "Stats": true,
+       "Isolation": false,
+       "AllowedVLANs": "",
+       "DHCP_Snooping": false,
+       "Shutdown_Voltage": "",
+       "Restart_Voltage": "",
+       "Priority": "22",
+       "Shutdown_Time": "",
+       "Startup_Time": "",
+       "Boot_Start_Delay": "",
+       "Updated_SFP2": true,
+       "QoSSched": "Strict",
+       "PoE_Smart": true,
+       "Updated_MTU": true
+     },
+     {
+       "Number": 23,
+       "Name": "Port 23",
+       "Enable": true,
+       "Link": "Auto",
+       "PoE": "Off",
+       "FlowControl": "None",
+       "Multicast": true,
+       "MTU": "1528",
+       "TxLimit": "",
+       "RxLimit": "",
+       "STP": true,
+       "STPPriority": "128",
+       "STP_Path_Cost": "",
+       "Stats": true,
+       "Isolation": false,
+       "AllowedVLANs": "",
+       "DHCP_Snooping": false,
+       "Shutdown_Voltage": "",
+       "Restart_Voltage": "",
+       "Priority": "23",
+       "Shutdown_Time": "",
+       "Startup_Time": "",
+       "Boot_Start_Delay": "",
+       "Updated_SFP2": true,
+       "QoSSched": "Strict",
+       "PoE_Smart": true,
+       "Updated_MTU": true
+     },
+     {
+       "Number": 24,
+       "Name": "Port 24",
+       "Enable": true,
+       "Link": "Auto",
+       "PoE": "48V",
+       "FlowControl": "None",
+       "Multicast": true,
+       "MTU": "1528",
+       "TxLimit": "",
+       "RxLimit": "",
+       "STP": true,
+       "STPPriority": "128",
+       "STP_Path_Cost": "",
+       "Stats": true,
+       "Isolation": false,
+       "AllowedVLANs": "",
+       "DHCP_Snooping": false,
+       "Shutdown_Voltage": "",
+       "Restart_Voltage": "",
+       "Priority": "24",
+       "Shutdown_Time": "",
+       "Startup_Time": "",
+       "Boot_Start_Delay": "",
+       "Updated_SFP2": true,
+       "QoSSched": "Strict",
+       "PoE_Smart": true,
+       "Updated_MTU": true
+     },
+     {
+       "Number": 25,
+       "Name": "Port 25",
+       "Enable": true,
+       "Link": "Auto",
+       "PoE": "Off",
+       "FlowControl": "None",
+       "Multicast": true,
+       "MTU": "1528",
+       "TxLimit": "",
+       "RxLimit": "",
+       "STP": true,
+       "STPPriority": "128",
+       "STP_Path_Cost": "",
+       "Stats": true,
+       "Isolation": false,
+       "AllowedVLANs": "",
+       "DHCP_Snooping": false,
+       "Shutdown_Voltage": "",
+       "Restart_Voltage": "",
+       "Priority": "25",
+       "Shutdown_Time": "",
+       "Startup_Time": "",
+       "Boot_Start_Delay": "",
+       "Updated_SFP2": true,
+       "QoSSched": "Strict",
+       "PoE_Smart": true,
+       "Updated_MTU": true
+     },
+     {
+       "Number": 26,
+       "Name": "Port 26",
+       "Enable": true,
+       "Link": "Auto",
+       "PoE": "Off",
+       "FlowControl": "None",
+       "Multicast": true,
+       "MTU": "1528",
+       "TxLimit": "",
+       "RxLimit": "",
+       "STP": true,
+       "STPPriority": "128",
+       "STP_Path_Cost": "",
+       "Stats": true,
+       "Isolation": false,
+       "AllowedVLANs": "",
+       "DHCP_Snooping": false,
+       "Shutdown_Voltage": "",
+       "Restart_Voltage": "",
+       "Priority": "26",
+       "Shutdown_Time": "",
+       "Startup_Time": "",
+       "Boot_Start_Delay": "",
+       "Updated_SFP2": true,
+       "QoSSched": "Strict",
+       "PoE_Smart": true,
+       "Updated_MTU": true
+     }
+   ],
+   "LACP": [
+     {
+       "Port": 1,
+       "Enable": false,
+       "Key": "",
+       "Role": "Active",
+       "Timeout": "Fast",
+       "Priority": "32768"
+     },
+     {
+       "Port": 2,
+       "Enable": false,
+       "Key": "",
+       "Role": "Active",
+       "Timeout": "Fast",
+       "Priority": "32768"
+     },
+     {
+       "Port": 3,
+       "Enable": false,
+       "Key": "",
+       "Role": "Active",
+       "Timeout": "Fast",
+       "Priority": "32768"
+     },
+     {
+       "Port": 4,
+       "Enable": false,
+       "Key": "",
+       "Role": "Active",
+       "Timeout": "Fast",
+       "Priority": "32768"
+     },
+     {
+       "Port": 5,
+       "Enable": false,
+       "Key": "",
+       "Role": "Active",
+       "Timeout": "Fast",
+       "Priority": "32768"
+     },
+     {
+       "Port": 6,
+       "Enable": false,
+       "Key": "",
+       "Role": "Active",
+       "Timeout": "Fast",
+       "Priority": "32768"
+     },
+     {
+       "Port": 7,
+       "Enable": false,
+       "Key": "",
+       "Role": "Active",
+       "Timeout": "Fast",
+       "Priority": "32768"
+     },
+     {
+       "Port": 8,
+       "Enable": false,
+       "Key": "",
+       "Role": "Active",
+       "Timeout": "Fast",
+       "Priority": "32768"
+     },
+     {
+       "Port": 9,
+       "Enable": false,
+       "Key": "",
+       "Role": "Active",
+       "Timeout": "Fast",
+       "Priority": "32768"
+     },
+     {
+       "Port": 10,
+       "Enable": false,
+       "Key": "",
+       "Role": "Active",
+       "Timeout": "Fast",
+       "Priority": "32768"
+     },
+     {
+       "Port": 11,
+       "Enable": false,
+       "Key": "",
+       "Role": "Active",
+       "Timeout": "Fast",
+       "Priority": "32768"
+     },
+     {
+       "Port": 12,
+       "Enable": false,
+       "Key": "",
+       "Role": "Active",
+       "Timeout": "Fast",
+       "Priority": "32768"
+     },
+     {
+       "Port": 13,
+       "Enable": false,
+       "Key": "",
+       "Role": "Active",
+       "Timeout": "Fast",
+       "Priority": "32768"
+     },
+     {
+       "Port": 14,
+       "Enable": false,
+       "Key": "",
+       "Role": "Active",
+       "Timeout": "Fast",
+       "Priority": "32768"
+     },
+     {
+       "Port": 15,
+       "Enable": false,
+       "Key": "",
+       "Role": "Active",
+       "Timeout": "Fast",
+       "Priority": "32768"
+     },
+     {
+       "Port": 16,
+       "Enable": false,
+       "Key": "",
+       "Role": "Active",
+       "Timeout": "Fast",
+       "Priority": "32768"
+     },
+     {
+       "Port": 17,
+       "Enable": false,
+       "Key": "",
+       "Role": "Active",
+       "Timeout": "Fast",
+       "Priority": "32768"
+     },
+     {
+       "Port": 18,
+       "Enable": false,
+       "Key": "",
+       "Role": "Active",
+       "Timeout": "Fast",
+       "Priority": "32768"
+     },
+     {
+       "Port": 19,
+       "Enable": false,
+       "Key": "",
+       "Role": "Active",
+       "Timeout": "Fast",
+       "Priority": "32768"
+     },
+     {
+       "Port": 20,
+       "Enable": false,
+       "Key": "",
+       "Role": "Active",
+       "Timeout": "Fast",
+       "Priority": "32768"
+     },
+     {
+       "Port": 21,
+       "Enable": false,
+       "Key": "",
+       "Role": "Active",
+       "Timeout": "Fast",
+       "Priority": "32768"
+     },
+     {
+       "Port": 22,
+       "Enable": false,
+       "Key": "",
+       "Role": "Active",
+       "Timeout": "Fast",
+       "Priority": "32768"
+     },
+     {
+       "Port": 23,
+       "Enable": false,
+       "Key": "",
+       "Role": "Active",
+       "Timeout": "Fast",
+       "Priority": "32768"
+     },
+     {
+       "Port": 24,
+       "Enable": false,
+       "Key": "",
+       "Role": "Active",
+       "Timeout": "Fast",
+       "Priority": "32768"
+     },
+     {
+       "Port": 25,
+       "Enable": false,
+       "Key": "",
+       "Role": "Active",
+       "Timeout": "Fast",
+       "Priority": "32768"
+     },
+     {
+       "Port": 26,
+       "Enable": false,
+       "Key": "",
+       "Role": "Active",
+       "Timeout": "Fast",
+       "Priority": "32768"
+     }
+   ],
+   "VLANs": [
+     {
+       "ID": 1,
+       "Name": "Management",
+       "Enable": true,
+       "PortSettings": "UUUUUUUUUUUUUUUUUUUUUUUUUU",
+       "IPv4_Enable": false,
+       "IPv4_Address": "",
+       "IPv4_Netmask": "",
+       "IPv6_Enable": false,
+       "IPv6_Address": "",
+       "IGMP_Querier": false
+     }
+   ],
+   "MSTI": [
+     {
+       "Priority": "32768",
+       "VLAN_List": "",
+       "Ports": [
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         }
+       ]
+     },
+     {
+       "Priority": "32768",
+       "VLAN_List": "",
+       "Ports": [
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         }
+       ]
+     },
+     {
+       "Priority": "32768",
+       "VLAN_List": "",
+       "Ports": [
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         }
+       ]
+     },
+     {
+       "Priority": "32768",
+       "VLAN_List": "",
+       "Ports": [
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         }
+       ]
+     },
+     {
+       "Priority": "32768",
+       "VLAN_List": "",
+       "Ports": [
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         }
+       ]
+     },
+     {
+       "Priority": "32768",
+       "VLAN_List": "",
+       "Ports": [
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         }
+       ]
+     },
+     {
+       "Priority": "32768",
+       "VLAN_List": "",
+       "Ports": [
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         },
+         {
+           "Priority": "128",
+           "Path_Cost": ""
+         }
+       ]
+     }
+   ],
+   "Mirror": {
+     "Port": "None",
+     "RemoteHost": "",
+     "Filter_MAC": "",
+     "Filter_IP": "",
+     "Ports": [
+     ]
+   },
+   "Auto_Backup_Enable": false
+ }
