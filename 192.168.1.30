@@ -1,0 +1,51 @@
+#        routerboard: yes
+#              model: CCR1009-7G-1C
+#      serial-number: 84A208680A15
+#      firmware-type: tilegx
+#   factory-firmware: 3.41
+#   current-firmware: 6.44
+#   upgrade-firmware: 6.44
+# 
+#             channel: stable
+#   installed-version: 6.44
+# 
+# Flags: U - undoable, R - redoable, F - floating-undo 
+#   ACTION                                   BY               POLICY             
+# 
+# software id = UUBG-PEVZ
+#
+# model = CCR1009-7G-1C
+# serial number = 84A208680A15
+/interface vlan
+add interface=ether7 name=vlan100-7 vlan-id=100
+add interface=ether7 name=vlan200-7 vlan-id=200
+/interface wireless security-profiles
+set [ find default=yes ] supplicant-identity=MikroTik
+/ip pool
+add name=dhcp_pool0 ranges=192.168.100.100,192.168.100.200
+add name=dhcp_pool1 ranges=192.168.200.100,192.168.200.200
+add name=dhcp_pool2 ranges=192.168.20.10-192.168.20.100
+/ip dhcp-server
+add address-pool=dhcp_pool2 disabled=no interface=ether2 lease-time=12h name=dhcp2
+/ip address
+add address=192.168.88.1/24 comment=defconf interface=combo1 network=192.168.88.0
+add address=192.168.100.1/24 interface=vlan100-7 network=192.168.100.0
+add address=192.168.200.1/24 interface=vlan200-7 network=192.168.200.0
+add address=192.168.0.1/30 interface=ether6 network=192.168.0.0
+add address=192.168.20.1/24 interface=ether2 network=192.168.20.0
+add address=192.168.30.1/24 interface=ether3 network=192.168.30.0
+add address=192.168.5.2/24 interface=ether5 network=192.168.5.0
+add address=192.168.1.30/24 interface=ether7 network=192.168.1.0
+/ip dhcp-server network
+add address=192.168.20.0/24 dns-server=192.168.20.150 gateway=192.168.20.1
+add address=192.168.100.0/24 dns-server=8.8.8.8 gateway=192.168.100.1
+add address=192.168.200.0/24 dns-server=8.8.8.8 gateway=192.168.200.1
+/ip firewall filter
+add action=drop chain=forward connection-state=new in-interface=ether6 protocol=icmp
+add action=drop chain=forward connection-state=new disabled=yes dst-address=192.168.100.100 dst-port=80 protocol=tcp src-address=192.168.200.100
+/ip route
+add distance=1 dst-address=192.168.5.1/32 gateway=192.168.0.2
+/system identity
+set name="MikroTik CCR"
+/tool sniffer
+set file-name=TestSniffer only-headers=yes
