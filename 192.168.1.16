@@ -1,4 +1,4 @@
-## Last commit: 2019-07-11 15:10:56 UTC by root
+## Last commit: 2019-07-22 20:00:37 UTC by root
 version 15.1X49-D70.3;
 groups {
     global {
@@ -209,10 +209,8 @@ interfaces {
     }
     ge-0/0/5 {
         unit 0 {
-            family ethernet-switching {
-                vlan {
-                    members vlan-trust;
-                }
+            family inet {
+                dhcp-client;
             }
         }
     }
