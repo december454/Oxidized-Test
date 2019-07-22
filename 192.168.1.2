@@ -1,0 +1,60 @@
+#        routerboard: yes
+#         board-name: hEX PoE
+#              model: 960PGS
+#      serial-number: 8A43098B319D
+#      firmware-type: qca9550L
+#   factory-firmware: 3.41
+#   current-firmware: 6.44
+#   upgrade-firmware: 6.44
+# 
+#             channel: stable
+#   installed-version: 6.44
+# 
+# Flags: U - undoable, R - redoable, F - floating-undo 
+#   ACTION                                   BY               POLICY             
+# U log action changed                       admin            write              
+# U log rule changed                         admin            write              
+# U log rule changed                         admin            write              
+# U log rule changed                         admin            write              
+# U log rule changed                         admin            write              
+# 
+# software id = T8WU-25KR
+#
+# model = 960PGS
+# serial number = 8A43098B319D
+/interface wireless security-profiles
+set [ find default=yes ] supplicant-identity=MikroTik
+/ip hotspot profile
+set [ find default=yes ] html-directory=flash/hotspot
+/ip pool
+add name=dhcp_pool0 ranges=192.168.10.50-192.168.10.254
+add name=dhcp_pool1 ranges=192.168.1.1,192.168.1.15-192.168.1.254
+add name=dhcp_pool2 ranges=192.168.1.1,192.168.1.50-192.168.1.254
+/ip dhcp-server
+add address-pool=dhcp_pool2 disabled=no interface=ether1 lease-time=1d name=dhcp1
+/snmp community
+add addresses=::/0 name=test
+/system logging action
+set 3 remote=192.168.1.15
+/ip address
+add address=192.168.1.2/24 interface=ether1 network=192.168.1.0
+add address=192.168.5.1/24 interface=ether5 network=192.168.5.0
+/ip dhcp-client
+add dhcp-options=hostname,clientid disabled=no interface=ether2
+/ip dhcp-server network
+add address=192.168.1.0/24 dns-server=8.8.8.8,8.8.4.4 gateway=192.168.1.2
+/ip firewall nat
+add action=masquerade chain=srcnat out-interface=ether2 src-address=192.168.1.0/24
+/ip route
+add check-gateway=ping distance=1 gateway=10.154.132.1
+/snmp
+set contact=Griffin enabled=yes location="Test Lab" trap-community=test
+/system clock
+set time-zone-name=America/Chicago
+/system identity
+set name="MikroTik HEX POE"
+/system logging
+set 0 action=remote
+set 1 action=remote
+set 2 action=remote
+set 3 action=remote
