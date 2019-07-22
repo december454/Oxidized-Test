@@ -1,0 +1,281 @@
+## Last commit: 2019-07-11 15:10:56 UTC by root
+version 15.1X49-D70.3;
+groups {
+    global {
+        system {
+            root-authentication {
+                encrypted-password "$5$g7Du/fFT$t3zyd1dSHl7z2lunvZ5JMXXUUKweAROl/bi.PY5UbA6"; ## SECRET-DATA
+            }
+        }
+    }
+}
+system {
+    host-name srx300;
+    root-authentication {
+        encrypted-password "$5$2ec8Z/ER$vZ/5rQt4RbY.xllPMW8LPygQQDteo/xyRyzaWee5x6/"; ## SECRET-DATA
+    }
+    name-server {
+        8.8.8.8;
+        8.8.4.4;
+    }
+    login {
+        user backup {
+            full-name "Oxidized Backup";
+            uid 103;
+            class super-user;
+            authentication {
+                encrypted-password "$5$TLALaB0l$.csVfAC60fXjmy32QasBQWK.BoYUs358KWmr653Es49"; ## SECRET-DATA
+            }
+        }
+    }
+    services {
+        ssh;
+        telnet;
+        xnm-clear-text;
+        netconf {
+            ssh;
+        }
+        dhcp-local-server {
+            group jdhcp-group {
+                interface irb.0;
+            }
+        }
+        web-management {
+            http;
+            https {
+                system-generated-certificate;
+            }
+        }
+    }
+    syslog {
+        archive size 100k files 3;
+        user * {
+            any emergency;
+        }
+        file messages {
+            any notice;
+            authorization info;
+        }
+        file interactive-commands {
+            interactive-commands any;
+        }
+    }
+    max-configurations-on-flash 5;
+    max-configuration-rollbacks 5;
+    license {
+        autoupdate {
+            url https://ae1.juniper.net/junos/key_retrieval;
+        }
+    }
+}
+security {
+    screen {
+        ids-option untrust-screen {
+            icmp {
+                ping-death;
+            }
+            ip {
+                source-route-option;
+                tear-drop;
+            }
+            tcp {
+                syn-flood {
+                    alarm-threshold 1024;
+                    attack-threshold 200;
+                    source-threshold 1024;
+                    destination-threshold 2048;
+                    timeout 20;
+                }
+                land;
+            }
+        }
+    }
+    nat {
+        source {
+            rule-set trust-to-untrust {
+                from zone trust;
+                to zone untrust;
+                rule source-nat-rule {
+                    match {
+                        source-address 0.0.0.0/0;
+                    }
+                    then {
+                        source-nat {
+                            interface;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    policies {
+        from-zone trust to-zone trust {
+            policy trust-to-trust {
+                match {
+                    source-address any;
+                    destination-address any;
+                    application any;
+                }
+                then {
+                    permit;
+                }
+            }
+        }
+        from-zone trust to-zone untrust {
+            policy trust-to-untrust {
+                match {
+                    source-address any;
+                    destination-address any;
+                    application any;
+                }
+                then {
+                    permit;
+                }
+            }
+        }
+    }
+    zones {
+        security-zone trust {
+            host-inbound-traffic {
+                system-services {
+                    all;
+                }
+                protocols {
+                    all;
+                }
+            }
+            interfaces {
+                irb.0;
+                ge-0/0/1.0;
+            }
+        }
+        security-zone untrust {
+            screen untrust-screen;
+            interfaces {
+                ge-0/0/0.0 {
+                    host-inbound-traffic {
+                        system-services {
+                            dhcp;
+                            tftp;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+interfaces {
+    ge-0/0/0 {
+        unit 0 {
+            family inet;
+        }
+    }
+    ge-0/0/1 {
+        gigether-options {
+            auto-negotiation;
+        }
+        unit 0 {
+            family inet {
+                address 192.168.1.16/24;
+            }
+        }
+    }
+    ge-0/0/2 {
+        unit 0 {
+            family ethernet-switching {
+                vlan {
+                    members vlan-trust;
+                }
+            }
+        }
+    }
+    ge-0/0/3 {
+        unit 0 {
+            family ethernet-switching {
+                vlan {
+                    members vlan-trust;
+                }
+            }
+        }
+    }
+    ge-0/0/4 {
+        unit 0 {
+            family ethernet-switching {
+                vlan {
+                    members vlan-trust;
+                }
+            }
+        }
+    }
+    ge-0/0/5 {
+        unit 0 {
+            family ethernet-switching {
+                vlan {
+                    members vlan-trust;
+                }
+            }
+        }
+    }
+    ge-0/0/6 {
+        unit 0 {
+            family ethernet-switching {
+                vlan {
+                    members vlan-trust;
+                }
+            }
+        }
+    }
+    ge-0/0/7 {
+        unit 0 {
+            family ethernet-switching {
+                vlan {
+                    members vlan-trust;
+                }
+            }
+        }
+    }
+    irb {
+        unit 0 {
+            family inet {
+                address 192.168.1.1/24;
+            }
+        }
+    }
+}
+snmp {
+    description "SRX 300 security device/router test";
+    location "Test Lab";
+    contact Griffin;
+    community test {
+        authorization read-only;
+    }
+}
+protocols {
+    l2-learning {
+        global-mode switching;
+    }
+}
+vlans {
+    vlan-trust {
+        vlan-id 3;
+        l3-interface irb.0;
+    }
+}
+# Hostname: srx300
+# Model: srx300
+# Junos: 15.1X49-D70.3
+# JUNOS Software Release [15.1X49-D70.3]
+# Hardware inventory:
+# Item             Version  Part number  Serial number     Description
+# Chassis                                CV3317AF0030      SRX300
+# Routing Engine   REV 0x03 650-077891   CV3317AF0030      RE-SRX300
+# FPC 0                                                    FPC
+#   PIC 0                                                  6xGE,2xGE SFP Base PIC
+# Power Supply 0
+# License usage:
+#                                  Licenses     Licenses    Licenses    Expiry
+#   Feature name                       used    installed      needed
+#   dynamic-vpn                           0            2           0    permanent
+# 
+# Licenses installed: none
+# 
