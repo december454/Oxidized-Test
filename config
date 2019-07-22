@@ -1,0 +1,10 @@
+[core]
+	bare = true
+	repositoryformatversion = 0
+	filemode = true
+[user]
+	name = december454
+	email = griffinowhite@gmail.com
+[remote "origin"]
+	url = git@github.com:december454/Oxidized-Test.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
