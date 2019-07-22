@@ -12,6 +12,7 @@
 # 
 # Flags: U - undoable, R - redoable, F - floating-undo 
 #   ACTION                                   BY               POLICY             
+# U address added                            admin            write              
 # U log action changed                       admin            write              
 # U log rule changed                         admin            write              
 # U log rule changed                         admin            write              
@@ -39,6 +40,7 @@ set 3 remote=192.168.1.15
 /ip address
 add address=192.168.1.2/24 interface=ether1 network=192.168.1.0
 add address=192.168.5.1/24 interface=ether5 network=192.168.5.0
+add address=192.168.254.1/24 interface=ether5 network=192.168.254.0
 /ip dhcp-client
 add dhcp-options=hostname,clientid disabled=no interface=ether2
 /ip dhcp-server network
