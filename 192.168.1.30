@@ -11,6 +11,7 @@
 # 
 # Flags: U - undoable, R - redoable, F - floating-undo 
 #   ACTION                                   BY               POLICY             
+# U dhcp server dhcp3 changed                admin            write              
 # U dhcp server dhcp3 added                  admin            write              
 # U changed snmp settings                    admin            write              
 # U item added                               admin            write              
@@ -25,7 +26,7 @@ add interface=ether7 name=vlan200-7 vlan-id=200
 /interface wireless security-profiles
 set [ find default=yes ] supplicant-identity=MikroTik
 /ip dhcp-server
-add disabled=no interface=ether5 name=dhcp3
+add interface=ether5 name=dhcp3
 /ip pool
 add name=dhcp_pool0 ranges=192.168.100.100,192.168.100.200
 add name=dhcp_pool1 ranges=192.168.200.100,192.168.200.200
